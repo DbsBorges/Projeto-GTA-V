@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+    <!--logo de imagen e titulo da pagina lá em cima-->
+
+    <title>DBS GTA</title>
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon"
+    />
+
+
+   
+ <!--Imagens de logo ja na pagina dentro da class e o link.css para colar a fonte que sera utilizada-->
+
+ <link href="https://fonts.cdnfonts.com/css/chalet" rel="stylesheet">
+      
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+   <link rel="stylesheet" href="./css/fontes.css"/>
+   <link rel="stylesheet" href="./css/responsivo.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="./imagens/logo-rockstar.svg" alt="Logo rockstar games"/>
+            <hr>
+            <img src="./imagens/logo-gta.svg" alt="Logo gta v"/>
+        </div>
+
+        <!--menu obs: target blank funciona para abri uma nova pagina para que o usuario não saia da minha atual-->
+
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="#home">HOME</a>
+                </li>
+                <li><a href="#comprar">COMPRAR</a>
+                </li>
+                <li><a href="https://support.rockstargames.com/categories/200013306" target="_blank">SUPORTE <img src="/imagens/icone-link.svg" alt="link de suporte"></a>
+                
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Imagem de fundo-->
+
+    <main class="home" id="home">
+        <img class="imagem fundo" src="./imagens/bg-main.png" alt="imagem de fundo do rapaz de laranja"/>
+
+        <!--Titulos e imagens das categorias do jogo do gta v e do gta online-->
+
+        <div class="informacoes">
+            <div class="lista-de-jogos">
+                <img src="/imagens/logo-gta-v.svg" alt="logo gta">
+                <img src="/imagens/logo-gta-online.svg" alt="logo gta online" />
+            </div>
+            <h1 class="titulo">Já disponiveis para Playstation 5, Xbox X|S e Computadores</h1>
+            <p class="texto">
+                Experimente os fenomenos do entretenimento Grand Theft Auto V e GTA Online
+            </p>
+
+            <!-- quando colocar a Tag A vai surgir o Href vai ter a função de fazer com  que o botao comprar assim que apertado deça ate a parte da site relacionado as compras-->
+
+            <a class="btn-comprar" href="#comprar">Compre Já</a>
+
+        </div>
+    </main>
+    <section class="compre-ja" id="comprar">
+        <h2 class="titulo">Compre já</h2>
+        <div class="cartao">
+            <img class="capa-do-jogo" src="/imagens/gta5.jpg" alt="Capa do jogo gta v">
+
+            <div class="informacoes">
+               
+                <h3>Grand Theft Auto V</h3>
+
+                <!--Strong é para dar um peso no texto e deixar ele de uma cor diferente das demais tipo um negrito-->
+                <p>
+                    Inclui <strong>modo história do GTA V</strong> e
+                    <strong>GTA Online</strong>
+                </p>
+
+                <!-- LOGOS DAS PLATFORMAS COM IMAGENS OBS:utilizando para grandide quantidade de itens tipo de 4 a ou mais itens digito Li* e a quantidade pois o * ele multiplica então Li*5 vai multplicar o li 5 vezes para min-->
+
+                <ul class="plataformas">
+                    <li>
+                        <img src="imagens/logo-ps5.svg" alt="logo Playstation 5"/>
+                    </li>
+
+                    <li><img src="/imagens/logo-xbox-series-s.svg" alt="logo xbox series x/s"/>
+
+                    </li>
+                    <li><img src="/imagens/logo-ps4.svg" alt="logo playstation 4"/>
+                    </li>
+
+                    <li><img src="/imagens/logo-xbox-one.svg" alt="logo xbox one"/>
+                    </li>
+
+                    <li><img src="/imagens/logo-pc.svg" alt="logo pc"/>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- butão de seleção da plataforma desejada como era as mesma coisas da ul passada das logo das plataformas com as imagens só demos  ctrl c, ctrl v em toda ul-->
+
+            <button class="btn plataforma">
+                selecione a plataforma
+                <ul class="plataformas">
+                    <li>
+                        <img src="imagens/logo-ps5.svg" alt="logo Playstation 5"/>
+                    </li>
+
+                    <li><img src="/imagens/logo-xbox-series-s.svg" alt="logo xbox series x|s"/>
+
+                    </li>
+                    <li><img src="/imagens/logo-ps4.svg" alt="logo playstation 4"/>
+                    </li>
+
+                    <li><img src="/imagens/logo-xbox-one.svg" alt="logo xbox one"/>
+                    </li>
+
+                    <li><img src="/imagens/logo-pc.svg" alt="logo pc"/>
+                    </li>
+                </ul>
+            </button>
+
+            <!-- utilizando o Ctrl + Shift + F esse comando vai organizar todo o meu codigo -->
+        
+            <!--ALT + L + O abri o live server-->
+        </div>
+    </section>
+
+    <script src="./js/index.js"></script>
+
+</body>
+</html>
